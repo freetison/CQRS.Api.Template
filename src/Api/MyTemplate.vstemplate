@@ -1,0 +1,137 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Api</Name>
+    <Description>CQRS API</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Api</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Api.csproj" File="Api.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <Folder Name="PublishProfiles" TargetFolderName="PublishProfiles">
+          <ProjectItem ReplaceParameters="false" TargetFileName="fiter-controlacceso-api-QA - Web Deploy.pubxml">fiter-controlacceso-api-QA - Web Deploy.pubxml</ProjectItem>
+        </Folder>
+        <Folder Name="ServiceDependencies" TargetFolderName="ServiceDependencies">
+          <Folder Name="fiter-controlacceso-api-QA - Web Deploy" TargetFolderName="fiter-controlacceso-api-QA - Web Deploy">
+            <ProjectItem ReplaceParameters="true" TargetFileName="profile.arm.json">profile.arm.json</ProjectItem>
+          </Folder>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <Folder Name="v1" TargetFolderName="v1">
+          <ProjectItem ReplaceParameters="true" TargetFileName="OrderController.cs">OrderController.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="DependencyInjection" TargetFolderName="DependencyInjection">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiVersioningConfigure.cs">ApiVersioningConfigure.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppSettingsConfigure.cs">AppSettingsConfigure.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CommonExtensions.cs">CommonExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CorsExtensions.cs">CorsExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EndpointsMiddlewareExtensions.cs">EndpointsMiddlewareExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HSTSExtensions.cs">HSTSExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SignalRMiddlewareExtensions.cs">SignalRMiddlewareExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SwaggerConfigure.cs">SwaggerConfigure.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SwaggerDefaultValues.cs">SwaggerDefaultValues.cs</ProjectItem>
+      </Folder>
+      <Folder Name="dist" TargetFolderName="dist">
+        <Folder Name="out-tsc" TargetFolderName="out-tsc">
+          <Folder Name="app" TargetFolderName="app">
+            <Folder Name="modules" TargetFolderName="modules">
+              <Folder Name="layout-module" TargetFolderName="layout-module">
+                <Folder Name="footer" TargetFolderName="footer">
+                  <ProjectItem ReplaceParameters="true" TargetFileName="footer.component.js">footer.component.js</ProjectItem>
+                  <ProjectItem ReplaceParameters="true" TargetFileName="footer.component.js.map">footer.component.js.map</ProjectItem>
+                </Folder>
+                <Folder Name="header" TargetFolderName="header">
+                  <ProjectItem ReplaceParameters="true" TargetFileName="header.component.js">header.component.js</ProjectItem>
+                  <ProjectItem ReplaceParameters="true" TargetFileName="header.component.js.map">header.component.js.map</ProjectItem>
+                </Folder>
+                <Folder Name="sidebar" TargetFolderName="sidebar">
+                  <ProjectItem ReplaceParameters="true" TargetFileName="sidebar.component.js">sidebar.component.js</ProjectItem>
+                  <ProjectItem ReplaceParameters="true" TargetFileName="sidebar.component.js.map">sidebar.component.js.map</ProjectItem>
+                </Folder>
+                <ProjectItem ReplaceParameters="true" TargetFileName="layout-module.module.js">layout-module.module.js</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="layout-module.module.js.map">layout-module.module.js.map</ProjectItem>
+              </Folder>
+              <ProjectItem ReplaceParameters="true" TargetFileName="angular-material.module.js">angular-material.module.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="angular-material.module.js.map">angular-material.module.js.map</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="app.component.js">app.component.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="app.component.js.map">app.component.js.map</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="app.module.js">app.module.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="app.module.js.map">app.module.js.map</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="app-routing.module.js">app-routing.module.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="app-routing.module.js.map">app-routing.module.js.map</ProjectItem>
+          </Folder>
+          <Folder Name="environments" TargetFolderName="environments">
+            <ProjectItem ReplaceParameters="true" TargetFileName="environment.js">environment.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="environment.js.map">environment.js.map</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="environment.prod.js">environment.prod.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="environment.prod.js.map">environment.prod.js.map</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="main.js">main.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="main.js.map">main.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="polyfills.js">polyfills.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="polyfills.js.map">polyfills.js.map</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Filters" TargetFolderName="Filters">
+        <Folder Name="FilterExceptionFactory" TargetFolderName="FilterExceptionFactory">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DetailedValidationExceptionProcessor.cs">DetailedValidationExceptionProcessor.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExceptionFactory.cs">ExceptionFactory.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IValidationExceptionProcessor.cs">IValidationExceptionProcessor.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ValidationExceptionProcessor.cs">ValidationExceptionProcessor.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiExceptionFilter.cs">ApiExceptionFilter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiResultResponseTypeFilter.cs">ApiResultResponseTypeFilter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BusinessExceptionFilter.cs">BusinessExceptionFilter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IAttributeGroup.cs">IAttributeGroup.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidateModelStateAttribute.cs">ValidateModelStateAttribute.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Logs" TargetFolderName="Logs">
+        <ProjectItem ReplaceParameters="false" TargetFileName="log-20210701.log">log-20210701.log</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="log-20210708.log">log-20210708.log</ProjectItem>
+      </Folder>
+      <Folder Name="Middlewares" TargetFolderName="Middlewares">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CachingMiddleware.cs">CachingMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExceptionHandlingMiddleware.cs">ExceptionHandlingMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExternalTurnValidatorMiddleware.cs">ExternalTurnValidatorMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HostFilteringMiddleware.cs">HostFilteringMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LogHeadersMiddleware.cs">LogHeadersMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LogRequestMiddleware.cs">LogRequestMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ModifyRequestBodyMiddleware.cs">ModifyRequestBodyMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RequestBodyLoggingMiddleware.cs">RequestBodyLoggingMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RequestResponseLoggingMiddleware.cs">RequestResponseLoggingMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ResponseBodyLoggingMiddleware.cs">ResponseBodyLoggingMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidateHeaderKeyMiddleware.cs">ValidateHeaderKeyMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidateQueryStringMiddleware.cs">ValidateQueryStringMiddleware.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiError.cs">ApiError.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiResult.cs">ApiResult.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DetailsResponse.cs">DetailsResponse.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Status.cs">Status.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".editorconfig">.editorconfig</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".editorconfig">vstg0001.editorconfig</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Qa.json">appsettings.Qa.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Changelog">Changelog</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Dockerfile">Dockerfile</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

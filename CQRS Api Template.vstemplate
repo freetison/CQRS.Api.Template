@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>CQRS Api Template</Name>
+    <Description>CQRS Api Template</Description>
+    <Icon>CQRS Api Template.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>CSharp</LanguageTag>
+	<PlatformTag>Windows</PlatformTag>
+	<ProjectTypeTag>Web</ProjectTypeTag>
+    <RequiredFrameworkVersion>5.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>a3aaf9bb-4318-43b9-a5a5-13ad2af35174</TemplateID>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>CQRS Api Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+      <ProjectCollection>
+        <ProjectTemplateLink ProjectName="Domain" CopyParameters="true"> src\Domain\MyTemplate.vstemplate </ProjectTemplateLink>
+	      <ProjectTemplateLink ProjectName="Application" CopyParameters="true"> src\Application\MyTemplate.vstemplate </ProjectTemplateLink>
+	      <ProjectTemplateLink ProjectName="Infrastructure" CopyParameters="true"> src\Infrastructure\MyTemplate.vstemplate </ProjectTemplateLink>
+	      <ProjectTemplateLink ProjectName="Api" CopyParameters="true"> src\Api\MyTemplate.vstemplate </ProjectTemplateLink>
+
+      </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
