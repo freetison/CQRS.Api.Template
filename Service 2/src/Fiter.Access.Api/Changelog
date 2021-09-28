@@ -1,0 +1,31 @@
+# Changelog
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## --------------------
+## [rc-4.1.5] - 24-06-2021
+## --------------------
+### Added
+- ValidationException Factory
+### Changed
+- AppLog Model
+- AccessosLos table structure
+### Fixed
+- Some bugs
+### Deprecated
+### Removed
+
+
+## --------------------
+## [rc-4.1.2] - 16-05-2021
+## --------------------
+### Added
+- Command Pre and Post Processor
+- AccessValidationException
+### Changed
+- Notification logic for Access Error
+### Fixed
+### Deprecated
+### Removed
+
+

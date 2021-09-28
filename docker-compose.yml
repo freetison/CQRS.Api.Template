@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fiter.access.api:
+    image: ${DOCKER_REGISTRY-}fiteraccessapi
+    build:
+      context: .
+      dockerfile: src/Fiter.Access.Api/Dockerfile

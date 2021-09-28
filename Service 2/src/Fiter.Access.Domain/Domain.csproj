@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Fn\QrDeviceConfig.cs" />
+    <Compile Remove="Exceptions\AccessValidationException.cs" />
+    <Compile Remove="Interfaces\IConfigurationService.cs" />
+    <Compile Remove="Interfaces\IExternalApiService.cs" />
+    <Compile Remove="Interfaces\IFiterAccessValidationRepository.cs" />
+    <Compile Remove="Interfaces\IFiterConfigurationRepository.cs" />
+    <Compile Remove="Interfaces\IFiterPartnerRepository.cs" />
+    <Compile Remove="Services\ConfigurationService.cs" />
+    <Compile Remove="Services\FiterAccessValidationService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+
+</Project>
