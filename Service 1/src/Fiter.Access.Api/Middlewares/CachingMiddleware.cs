@@ -1,5 +1,3 @@
-﻿
-
 // ReSharper disable StringLiteralTypo
 
 using System;
@@ -23,7 +21,6 @@ namespace Api.Middlewares
             //var missingKeys =  keys.Except(httpContext.Request.Query.Keys).ToList();
             //if (missingKeys.Any()) { throw new DomainValidationException($"Missing keys: {string.Join(",", missingKeys) }"); }
 
-            Console.WriteLine("---------------------------------------------- 2");
             await _next(httpContext);
         }
 
